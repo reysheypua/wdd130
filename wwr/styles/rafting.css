@@ -1,8 +1,9 @@
 :root {
     --primary-color: #8A1C0E; /*Deep Red*/
     --secondary-color: #B54430; /*Warm Brown*/
-    --accent1-color: #E1B24C; /*Golden Yellow*/
+    --accent1-color: #d39a1f; /*Golden Yellow*/
     --accent2-color: #F5E7C6; /*Soft Beige*/
+    --text-color: #7a5709;
     --heading-font: "Segoe UI", Tahoma, Verdana, Arial, sans-serif;
 }
 
@@ -14,13 +15,25 @@
 
 body {
     font-family: var(--heading-font);
-    color: var(--accent1-color);
+    color: var(--text-color);
     text-align: center;
 }
 
 header, main {
-    width: 840px;
-    margin: 40px auto;
+    width: 60%;
+    margin: 50px auto;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
 }
 
 h1, h2 {
@@ -36,12 +49,18 @@ nav, p, section, article {
 }
 
 nav {
+    display: flex;
     text-align: left;
     margin: 15px auto;
 }
 
 a {
     margin: 8px;
+    padding: 5px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:  x-large;
+    color: var(--primary-color);
 }
 
 .hero {
@@ -81,8 +100,52 @@ article {
     padding: 15px;
 }
 
+.history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.history p {
+  flex: 1;
+  color: var(--accent1-color);
+}
+
+.history img {
+  max-width: 300px;
+  width: 100%; 
+  height: auto;
+}
+
+section img {
+    width: 200px;
+    height: auto;
+}
+
+.figure-list {
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: var(--accent1-color);
+}
+
+figcaption {
+    max-width: 10rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
 footer {
     text-align: center;
+    color: var(--accent1-color);
 }
 
 footer p{
@@ -92,13 +155,14 @@ footer p{
 }
 
 .socialmedia {
-    text-align: center;
+    display: flex;
+    justify-content: flex-end;
     margin-bottom: 50px;
+    margin-right: 100px;
 }
 
 .socialmedia a {
     text-decoration: none;
-    margin: 25px;
 }
 
 .socialmedia img {
