@@ -1,7 +1,7 @@
 :root {
     --primary-color: #8A1C0E; /*Deep Red*/
     --secondary-color: #B54430; /*Warm Brown*/
-    --accent1-color: #d39a1f; /*Golden Yellow*/
+    --accent1-color: #bb8c0c; /*Golden Yellow*/
     --accent2-color: #F5E7C6; /*Soft Beige*/
     --text-color: #7a5709;
     --heading-font: "Segoe UI", Tahoma, Verdana, Arial, sans-serif;
@@ -110,7 +110,7 @@ article {
 
 .history p {
   flex: 1;
-  color: var(--accent1-color);
+  color: var(--text-font);
 }
 
 .history img {
@@ -134,7 +134,7 @@ figure {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    color: var(--accent1-color);
+    color: var(--text-font);
 }
 
 figcaption {
@@ -145,11 +145,11 @@ figcaption {
 
 footer {
     text-align: center;
-    color: var(--accent1-color);
+    color: var(--text-font);
 }
 
 footer p{
-    border-top: 1px solid var(--accent1-color);
+    border-top: 1px solid var(--text-font);
     margin-top: 100px;
     font-size: medium;
 }
