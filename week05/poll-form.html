@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Form</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Content Information</legend>
+                <!-- Explicit Label -->
+                <label for="fullname">Full Name: </label>
+                <input type="text" id="fullname" name="fullname"><br>
+                <!-- Implicit Label -->
+                <label>Email: <input type="email" name="useremail"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="browser">What is you favorite browser?</label>
+                <select name="browser" id="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="safari">Safari</option>
+                    <option value="opera">Opera</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="microsoftedge">Microsoft Edge</option>
+                </select><br>
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet"><br>
+                <label for="feedback">List the places you have lived</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Manila, Cebu, Pampanga, Davao"></textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
