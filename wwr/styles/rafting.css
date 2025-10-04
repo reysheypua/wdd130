@@ -73,7 +73,7 @@ a {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -90,6 +90,10 @@ h2, h3 {
 
 h3 {
     color: var(--text-color);
+}
+
+.info h1{
+    color: var(--primary-color);
 }
 
 article {
