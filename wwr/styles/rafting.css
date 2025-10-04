@@ -184,11 +184,11 @@ label, .purpose p {
 input, textarea {
     padding: 0.5rem;
     border-radius: 0.5rem;
+    font-size: 20px;
 }
 
 textarea {
     margin: 0.5rem 1rem;
-    color: #8b8b8b;
 }
 
 .useremail, .username, .purpose, .message, .newsletter {
