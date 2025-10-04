@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--heading-font);
-    color: var(--text-color);
+    color: var(--accent1-color);
     text-align: center;
 }
 
@@ -36,7 +36,7 @@ header img {
     width: 150px;
 }
 
-h1, h2 {
+h1, h2{
     font-family: var(--heading-font);
     color: var(--primary-color);
     font-size: xx-large;
@@ -82,6 +82,14 @@ h1 {
     background-color: var(--accent1-color);
     color: white;
     box-shadow: 0 0 15px rgb(65, 65, 65);
+}
+
+h2, h3 {
+    margin: 0.5rem;
+}
+
+h3 {
+    color: var(--text-color);
 }
 
 article {
@@ -143,13 +151,108 @@ figcaption {
     margin: 10px;
 }
 
+.contactframe {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    margin: 3rem 0 3rem 0;
+}
+
+iframe {
+    width: 500px;
+    height: 500px;
+    align-self: center;
+}
+
+form {
+    text-align: left;
+    padding: 2rem 0 2rem 5rem;
+}
+
+label {
+    color: var(--accent1-color);
+    font-size: 20px;
+    font-family: var(--text-font);
+    font-weight: 500;
+    margin: 0 1rem;
+
+}
+
+input, textarea {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+textarea {
+    margin: 0.5rem 1rem;
+    color: #8b8b8b;
+}
+
+.useremail, .username, .purpose, .message, .newsletter {
+    margin: 0.5rem 0;
+}
+
+.username, .useremail {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0.5rem;
+}
+
+.purpose {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+
+button {
+    padding: 1rem;
+    font-size: 20px;
+    background-color: var(--accent1-color);
+    color: white;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5rem;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+}
+
+.employee img {
+    width: 200px;
+}
+
+.employee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.staff {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem;
+}
+
+.employee figcaption {
+    font-size: 20px;
+}
+
 footer {
     text-align: center;
     color: var(--text-font);
 }
 
 footer p{
-    border-top: 1px solid var(--text-font);
+    border-top: 1px solid var(--accent1-color);
     margin-top: 100px;
     font-size: medium;
 }
