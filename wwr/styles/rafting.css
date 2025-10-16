@@ -126,12 +126,18 @@ article {
 article p {
     font-size: larger;
     color: var(--text-color);
+    margin-top: 0;
 }
 
 .staff-overview {
     background-color: var(--accent3-color);
     height: 275px;
     border-radius: 1rem;
+}
+
+.staff-overview h2 {
+    padding-left: 2rem;
+    padding-top: 1rem;
 }
 
 .hero article img {
