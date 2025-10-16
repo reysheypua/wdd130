@@ -3,6 +3,7 @@
     --secondary-color: #B54430; /*Warm Brown*/
     --accent1-color: #bb8c0c; /*Golden Yellow*/
     --accent2-color: #F5E7C6; /*Soft Beige*/
+    --accent3-color: #fff4d9;
     --text-color: #7a5709;
     --heading-font: "Segoe UI", Tahoma, Verdana, Arial, sans-serif;
 }
@@ -19,21 +20,34 @@ body {
     text-align: center;
 }
 
-header, main {
-    width: 60%;
-    margin: 50px auto;
-}
-
-header{
+header {
+    padding: 1rem;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 30% 70%;
     align-items: center;
+    background-color: white;
+    width: 100%;
+}
+
+.transparent-border {
+    background-color: #8a1c0ead;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
 }
 
 header img {
     display: block;
     margin: 0 auto;
-    width: 150px;
+    width: 100px;
 }
 
 h1, h2{
@@ -45,7 +59,7 @@ h1, h2{
 nav, p, section, article {
     margin: 30px;
     padding: 8px;
-    font-size: 20px;
+    font-size: medium;
 }
 
 nav {
@@ -59,7 +73,7 @@ a {
     padding: 5px 25px;
     text-decoration: none;
     font-weight: bold;
-    font-size:  x-large;
+    font-size:  larger;
     color: var(--primary-color);
 }
 
@@ -174,7 +188,7 @@ form {
 
 label, .purpose p {
     color: var(--accent1-color);
-    font-size: 20px;
+    font-size: medium;
     font-family: var(--text-font);
     font-weight: 500;
     margin: 0 1rem;
@@ -219,7 +233,7 @@ textarea {
 
 button {
     padding: 1rem;
-    font-size: 20px;
+    font-size: medium;
     background-color: var(--accent1-color);
     color: white;
     font-weight: 600;
@@ -247,7 +261,7 @@ button {
 }
 
 .employee figcaption {
-    font-size: 20px;
+    font-size: large;
 }
 
 footer {
@@ -274,4 +288,142 @@ footer p{
 
 .socialmedia img {
     width: 50px;
+}
+
+.homehero{
+    display: block;
+    position: relative;
+}
+
+.homehero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(70%);
+}
+
+.homedetails {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    text-align: left;
+}
+
+.homedetails h1 {
+    font-size: 100px;
+    -webkit-text-stroke: 2px #ffc5bc;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    font-weight: 500;
+}
+
+.homedetails h4 {
+    font-size: 30px;
+    font-weight: 400;
+    -webkit-text-stroke: 0.3px var(--accent1-color);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    margin: 0.5rem 0 1.5rem;
+}
+
+.homedetails button {
+    width: fit-content;
+    padding: 1.5rem 3.5rem;
+}
+
+.home-newsletter {
+    max-width: 20%;
+    margin: 5rem auto;
+    background-color: var(--accent3-color);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.home-newsletter h2 {
+    font-size: x-large;
+}
+
+.home-newsletter form {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.home-newsletter input {
+    padding: 1rem;
+    margin: 0 1rem 1rem;
+}
+
+.home-newsletter label {
+    margin-bottom: 0.5rem;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    margin: 5rem;
+}
+
+.action-description {
+    width: 30%;
+    margin: 3rem;
+}
+
+.action-description a {
+    margin: 0;
+    padding: 0;
+}
+
+.action-description h2, .action-description p {
+    margin: 16px;
+}
+
+.action-description p {
+    font-size: larger;
+}
+
+.action-description button {
+    width: 50%;
+}
+
+.additional {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, 25%);
+    background-color: var(--accent3-color);
+    padding: 5rem 2rem;
+    width: 100%;
+}
+
+.additional1 {
+    grid-row: 2/5;
+}
+
+.additional2 {
+    grid-row: 1/4;
+}
+
+.add-img1, .add-img2 {
+    max-width: 60%;
+}
+
+.additional1, .additional2 {
+    justify-items: center;
+}
+
+.add-desc1, .add-desc2 {
+    width: 70%;
+    align-content: center;
+}
+
+.add-desc1 p, .add-desc2 p {
+    font-size: larger;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 0.5rem;
+}
+
+.add-desc1 h2, .add-desc2 h2 {
+    margin: 2rem 0 1.5rem;
 }
