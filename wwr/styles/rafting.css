@@ -357,11 +357,6 @@ footer p{
     margin: 0.5rem 0 1.5rem;
 }
 
-.homedetails button {
-    width: fit-content;
-    padding: 1.5rem 3.5rem;
-}
-
 .home-newsletter {
     max-width: 20%;
     margin: 5rem auto;
@@ -415,10 +410,6 @@ footer p{
     font-size: larger;
 }
 
-.action-description button {
-    width: 50%;
-}
-
 .additional {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -467,20 +458,30 @@ footer p{
     padding: 3rem;
     background-color: var(--accent3-color);
     border-radius: 3rem;
+     text-align: center;
 }
 
-.to-contact a, .to-contact button{
-    margin: 0 auto;
-    width: 175px;
+.to-contact a, .call-to-action a, .homedetails a {
+    display: inline-block;
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 1rem 3rem;
+    font-size: medium;
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+    border: 0;
+    border-radius: 5rem;
+    justify-content: center;
+    width: auto;
     margin: 1rem;
+    text-decoration: none;
 }
 
 .trips {
     display: grid;
     grid-template-rows: repeat(4, 25%);
     padding: 5rem 5rem 0 5rem;
-
-    
 }
 
 .trip1 {
